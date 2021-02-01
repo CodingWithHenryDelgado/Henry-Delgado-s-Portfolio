@@ -29,6 +29,7 @@ a{
 p{
   font-family: 'Oxygen', sans-serif;
 }
+
   
 /* -------------------- Base Header - Footer Styles -------------------- */
 
@@ -72,24 +73,24 @@ header h1 {
 }
 
 header nav {
-  width: 95%;
+  width: 100%;
   font-size: 0.8em;
   font-family: 'Oxygen', sans-serif;
   text-transform: uppercase;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
 }
 
 header nav ul {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
+  display: block;
 }
 
 header nav ul li {
-  font-size: 1.125em;
+  font-size: 1.3em;
+  line-height: 2em;
+  text-align: center;
 }
 
 footer {
@@ -213,8 +214,10 @@ footer h2{
   text-decoration: underline;
 }
 
-.projects figure {
-  align-items: center;
+.thumbnails {
+  border: #1f202b solid 3px;
+  height: auto;
+  width: 100%;
 }
 
  /* ==========================================================================
@@ -329,10 +332,16 @@ footer h2{
     header nav {
       font-size: 0.8em;
       width: 40%;
+      display: flex;
     }
 
     header nav ul {
+      display: flex;
       justify-content: space-between;
+    }
+
+    header nav ul li{
+      font-size: 1.125em;
     }
   
     .header-divider {
@@ -420,7 +429,16 @@ footer h2{
   
     header nav {
       font-size: 0.8em;
+      display: flex;
       width: 30%;
+    }
+
+    header ul{
+      display: flex;
+    }
+
+    header nav ul li{
+      font-size: 1.125em;
     }
   
     h2 {
