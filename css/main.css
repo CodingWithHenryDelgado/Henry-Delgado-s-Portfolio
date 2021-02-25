@@ -207,19 +207,76 @@ footer h2{
  }
 
  .projects h2 {
-   width: 95%;
-  font-family: 'Caveat', cursive;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-align: center;
-  text-decoration: underline;
+    width: 95%;
+    font-family: 'Caveat', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
 }
 
-.thumbnails {
-  border: #1f202b solid 3px;
-  height: auto;
-  width: 100%;
-}
+  .thumbnails {
+    border: #1f202b solid 3px;
+    height: auto;
+    width: 100%;
+  }
+
+  /* -------------------- Projects Section -------------------------------*/
+
+  .services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #b5b7c9;
+    text-align: center;
+  }
+
+  .services h2{
+    font-family: 'Caveat', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .services-icon{
+    width: 90%;
+    margin: 10px 0;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    font-size: 1.5em;
+  }
+
+  .center{
+    text-align: center;
+    width: 100%;
+  }
+
+  .services .icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .services h4{
+    text-align: center;
+    width: 100%;
+  }
+
+  .services i{
+    background:  #f0f1f4;
+    border: solid  #f0f1f4 10px;
+    border-radius: 50%;
+    color: #ff4c4c;
+  }
+
+  .services p{
+    padding: 0 10px;
+  }
+  
 
  /* ==========================================================================
      Helper classes
@@ -327,12 +384,12 @@ footer h2{
 
     header h1{
       font-size: 1.3em;
-      width: 60%;
+      width: 45%;
     }
   
     header nav {
       font-size: 0.8em;
-      width: 40%;
+      width: 55%;
       display: flex;
     }
 
@@ -409,6 +466,16 @@ footer h2{
       width: 100%;
     }
 
+    .services-icon{
+      width: 45%;
+      margin: 10px 15px 10px 0;
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row wrap;
+      font-size: 1.5em;
+    }
+
   }
 
   @media only screen and (min-width:1200px) {
@@ -431,7 +498,7 @@ footer h2{
     header nav {
       font-size: 0.8em;
       display: flex;
-      width: 30%;
+      width: 40%;
     }
 
     header ul{
@@ -476,6 +543,13 @@ footer h2{
         font-size: 1.2em;
      }
 
+     .services i{
+       font-size: 1em;
+     }
+
+     .services h4{
+      font-size: 1.15em;
+     }
   }
   
   /* ==========================================================================
