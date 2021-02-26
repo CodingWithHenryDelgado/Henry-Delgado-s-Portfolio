@@ -16,13 +16,15 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Hachi+Maru+Pop&family=Oxygen:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <div class="content-wrapper">
 
-              <h1>Henry Delgado | Web Developer</h1>
+              <h1 class="glitch" data-glitch="Explore" title="404">Henry Delgado | Web Developer</h1>
               
               <div class="header-divider"></div>
 
@@ -43,11 +45,9 @@
           <div class="content-wrapper">
             <h2>About Me!</h2>
               <div class="about-content">
-                <p>
-                  Hey there! My name is Henry Delgado and I'm passionate about making websites. I have made <a href = "#project-apps">apps</a> that I have shipped
-                  to the Google Play Store! I have flown through the Skill Crush Front End Developement class and I'm currently learning Wordpress! I already know some languages
-                  like Java and Python. I can't wait to work on your website together so we can both be happy with the end result.
-                </p>
+                    <p>Hey there! My name is Henry Delgado, I want to work with you to make your website a reality! I love making websites because it's like a complex art piece, we can work on this together
+                      to make the experience great and the end result fantastic to make your products/pieces stand out! I have made <a href = "#project-apps">apps</a> that I have shipped
+                      to the Google Play Store!</p>
               </div>
           </div>
         </section>
@@ -57,7 +57,7 @@
             <h2>Projects!</h2>
               <div class="project-websites">
                 <figure >
-                  <a href="https://henrydelglitch.github.io/unplugged-retreat/" target="_blank"><img src="img/unplugged-retreat.png" alt="A screenshot of a resort website I worked on" class="thumbnails"/></a>
+                  <a href="https://henrydelglitch.github.io/unplugged-retreat/" target="_blank"><img src="img/unplugged-retreat.png" alt="A screenshot of a resort website I worked on" class="thumbnails" id="me"/></a>
                 </figure>
                   <p><strong>HTML, CSS, Photoshop</strong></p>
                   <p>Skill Crush handed me the images and photoshop reference to make this website possible. I have written all the code here making the site
@@ -128,15 +128,15 @@
                 </div>
                 <div class="services-icon">
                   <p class="center"><a href="#contact"><i class="fas fa-comment-alt"></i></a></p>
-                  <h4>Creativity</h4>
+                  <h4>JavaScript / JQuery</h4>
                   <br>
-                  <p>Ability to solve problems and add creative comments to make your site even better!</p>
+                  <p></p>
                 </div>       
                 <div class="services-icon">
                   <p class="center"><a href="#contact"><i class="fas fa-smile-beam"></i></a></p>
-                  <h4>Flexibile</h4>
+                  <h4>Ruby</h4>
                   <br>
-                  <p>Very flexibile and great listener so we can achieve this amazing website with smooth sailing.</p>
+                  <p></p>
                 </div>                                                            
               </div>
           </div>
@@ -179,17 +179,24 @@
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLNLLCD9QB"></script>
     <script>
-      window.ga = function () {
-        ga.q.push(arguments)
-      };
-      ga.q = [];
-      ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto');
-      ga('send', 'pageview')
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-VLNLLCD9QB');
     </script>
+
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+      </script>
+
+    <script src="mgGlitch.js" type="text/javascript"></script>
+    <script src="mgGlitch.min.js" type="text/javascript"></script>
        
     </body>
 
