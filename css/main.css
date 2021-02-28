@@ -74,8 +74,8 @@ header h1 {
 
 header nav {
   width: 100%;
-  font-size: 0.8em;
-  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  font-family: 'JetBrains Mono', monospace;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -104,16 +104,6 @@ header h1{
       animation-iteration-count: infinite;
       animation-direction: alternate;
 }
-
-@keyframes textflicker {
-  from {
-    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
-  }
-  to {
-    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
-  }
-}
-
 
 footer {
   color: white;
@@ -175,8 +165,8 @@ footer h2{
  /* -------------------- About Section -------------------------------*/
 
  .about{
-  background: #FFF;
-  min-height: 250px;
+  background-image: url(../img/2372508.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -196,6 +186,83 @@ footer h2{
  .about p{
    font-size: 1.8rem;
  }
+ 
+ .sign{
+  animation: border-flicker 2s linear infinite;
+  border:5px solid #1086e8;
+  border-radius: 10%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  -webkit-box-shadow: 0px 0px 20px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 20px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 20px 4px rgba(16,134,232,0.73);
+}
+
+.sign-image{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-image img{
+  height: auto;
+  width: 90%;
+  border:5px solid #FB4264;
+  border-radius: 8%;
+  -webkit-box-shadow: 0px 0px 78px 4px rgba(251,66,100,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(251,66,100,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(251,66,100,0.73);
+}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #F40A35;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.neon h2{
+  text-decoration: none;
+}
+
+.sign-desc{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  color: #FB4264;
+  text-shadow: 0 0 3vw #F40A35;
+  font-size: 1rem;
+}
+
+.sign-desc h2{
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  margin: 0 30px;
+  text-decoration: underline;
+}
+
+.sign-desc p{
+  font-family: 'Fredoka One', cursive;
+  font-size: 1rem;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
 
  /* -------------------- Projects Section -------------------------------*/
 
@@ -203,99 +270,144 @@ footer h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
  }
 
- .projects .project-websites{
+ .projects h2{
+   font-family: 'Caveat', cursive;
+   font-size: 2.5em;
+   text-decoration: underline;
+   text-align: center;
+ }
+
+ .art-part{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-piece{
+  border: solid black 10px;
+  border-left: solid #333232 10px;
+  border-top: solid #333232 10px;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d50a6610-495f-48bc-90de-9a3e858d48a3/dte0by-02815ebd-8bcd-49ca-ad00-3c2671775687.jpg/v1/fill/w_1280,h_1657,q_75,strp/canvas_texture_white_paper_by_enchantedgal_stock_dte0by-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNjU3IiwicGF0aCI6IlwvZlwvZDUwYTY2MTAtNDk1Zi00OGJjLTkwZGUtOWEzZTg1OGQ0OGEzXC9kdGUwYnktMDI4MTVlYmQtOGJjZC00OWNhLWFkMDAtM2MyNjcxNzc1Njg3LmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.SAXEk7OErAqUhPkDSITY953lQhDhPtHGvhnXKq6_jWY");
+  background-size: cover;
+  box-shadow: 5px 3px 1px rgba(0,0,0,0.6);
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.info{
+  border: solid darkgray 5px;
+  border-left: solid rgb(200, 200, 200) 5px;
+  border-top: solid rgb(200, 200, 200) 5px;
+  box-shadow: 5px 3px 1px rgba(0,0,0,0.6);
+  font-weight: 700;
+  padding: 0 20px;
+  margin-bottom: 1em;
+}
+
+.info h3{
+  text-decoration: underline;
+}
+
+.buttons{
+  background-color: #99ffff;
+  border: solid 2px #006666;
+  border-radius: 20%;
+  color: #000;
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  margin: 5px 0;
+  padding: 0 5px;
+  text-align: center;
+  width: 40%;
+}
+
+.site-buttons{
+  background-color: #ff5050;
+  border: solid 2px  #4d0000;
+  border-radius: 20%;
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.9em;
+  margin: 5px 0;
+  padding: 0 5px;
+  text-align: center;
+  width: 40%;
+}
+
+.site-buttons a:hover{
+  color: #FFF;
+}
+
+.site-buttons a{
+  color: #000;
+}
+
+.thumbnails {
+  border: #1f202b solid 3px;
+  height: auto;
+  width: 100%;
+}
+
+  /* -------------------- Services Section -------------------------------*/
+  
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #b5b7c9;
+  background-image: url(../img/2372508.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.services h2{
+  font-family: 'Caveat', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.services-icon{
   width: 90%;
   margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.center{
+  text-align: center;
+  width: 100%;
+}
+
+.services-icon{
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  font-size: 1.5em;
 }
 
- .projects .project-apps{
-    width: 90%;
-    margin: 10px 0;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-    font-size: 1.5em;
- }
-
- .projects h2 {
-    width: 95%;
-    font-family: 'Caveat', cursive;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-    text-decoration: underline;
+.services h4{
+  text-align: center;
+  width: 100%;
 }
 
-  .thumbnails {
-    border: #1f202b solid 3px;
-    height: auto;
-    width: 100%;
-  }
+.services i{
+  background:  #f0f1f4;
+  border: solid  #f0f1f4 10px;
+  border-radius: 50%;
+  color: #ff4c4c;
+  text-align: center;
+  align-items: center;
+}
 
-  /* -------------------- Projects Section -------------------------------*/
+.services p{
+  padding: 0 10px;
+}
 
-  .services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background-color: #b5b7c9;
-    text-align: center;
-  }
-
-  .services h2{
-    font-family: 'Caveat', cursive;
-    font-size: 2.5em;
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  .services-icon{
-    width: 90%;
-    margin: 10px 0;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-    font-size: 1.5em;
-  }
-
-  .center{
-    text-align: center;
-    width: 100%;
-  }
-
-  .services .icon{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-
-  .services h4{
-    text-align: center;
-    width: 100%;
-  }
-
-  .services i{
-    background:  #f0f1f4;
-    border: solid  #f0f1f4 10px;
-    border-radius: 50%;
-    color: #ff4c4c;
-  }
-
-  .services p{
-    padding: 0 10px;
-  }
   
 
  /* ==========================================================================
@@ -403,12 +515,12 @@ footer h2{
     }
 
     header h1{
-      font-size: 1.3em;
+      font-size: 1.1em;
       width: 45%;
     }
   
     header nav {
-      font-size: 0.8em;
+      font-size: 1em;
       width: 55%;
       display: flex;
     }
@@ -431,30 +543,53 @@ footer h2{
     .about p{
       font-size: 1.3em;
     }
-  
-  
-    /* Programs */
 
-    .projects .project-websites{
-      width: 47%;
-      margin: 10px 15px 10px 0;
+    .neon{
+      font-size: 1.75rem;
+    }
+
+    .sign-image img{
+      margin-left: 20%;
+      width: 55%;
+    }
+
+    .sign-desc h2{
+      font-size: 4rem;
+    }
+
+    .sign-desc{
+      font-size: 1.46rem;
+      margin: 0 30px;
+    }
+  
+    /* Projects */
+
+    .art-part{
+      width: 48%;
+      margin-right: 10px;
       display: inline-flex;
       justify-content: flex-start;
       align-items: center;
       flex-flow: column wrap;
-      font-size: 1.5em;
+    }
+
+    .projects h2{
+      font-size: 3rem;
+    }
+
+    /* Services */
+
+    .services h2{
+      font-size: 3rem;
+    }
+
+    .services h4{
+      font-size: 1rem;
     }
     
-     .projects .project-apps{
-        width: 47%;
-        margin: 10px 15px 10px 0;
-        display: inline-flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-flow: column wrap;
-        font-size: 1.5em;
+    .services-icon{
+      width: 30%;
      }
-  
 
     /* Footer */
     footer .content-wrapper {
@@ -486,16 +621,6 @@ footer h2{
       width: 100%;
     }
 
-    .services-icon{
-      width: 45%;
-      margin: 10px 15px 10px 0;
-      display: inline-flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-flow: row wrap;
-      font-size: 1.5em;
-    }
-
   }
 
   @media only screen and (min-width:1200px) {
@@ -516,7 +641,7 @@ footer h2{
     }
   
     header nav {
-      font-size: 0.8em;
+      font-size: 1.3em;
       display: flex;
       width: 40%;
     }
@@ -543,24 +668,67 @@ footer h2{
         line-height: 1.333;
     }
 
-     /* Programs */
-
-     .projects .project-websites{
-      width: 30%;
-      display: inline-flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-flow: column wrap;
-      font-size: 1.2em;
+    /* ABOUT */
+    .sign{
+      display: inline-block;
     }
-    
-     .projects .project-apps{
-        width: 30%;
-        display: inline-flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-flow: column wrap;
-        font-size: 1.2em;
+
+    .sign-image h2{
+      margin: 0 auto;
+    }
+
+    .sign-image{
+      width: 45%;
+    }
+
+    .sign-image figure{
+      margin: 0;
+    }
+
+    .sign-image img{
+      width: 70%;
+    }
+
+    .sign-desc{
+      width: 50%;
+      margin: auto;
+    }
+
+    .sign-desc h2{
+      font-size: 4rem;
+    }
+
+     /* Projects */
+
+     .art-part{
+       width: 40%;
+       margin-right: 6.5em;
+     }
+
+     .projects h2{
+       font-size: 4rem;
+       margin-right: 1.4em;
+     }
+
+     .buttons{
+       width: 20%;
+       font-size: 0.8rem;
+     }
+
+     .site-buttons{
+       width: 45%;
+       font-size: 1rem;
+     }
+
+     /* SERVICES */
+
+     .services h2{
+       font-size: 4rem;
+     }
+
+     .services-icon{
+       margin-right: 2rem;
+       font-size: 1.5rem;
      }
 
      .services i{
